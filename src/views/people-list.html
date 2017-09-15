@@ -1,0 +1,8 @@
+<ul>
+    <li ng-repeat="person in vm.people | filter: vm.search" style="font-size: 25pt; list-style:none">
+        <a href="javascript:void()">Nombre:</a> {{person.name}}
+        <a href="javascript:void()">Apellido:</a> {{person.lastName}}
+        <a href="javascript:void()">Perfil:</a> {{person.profile}}
+        <button ng-click="vm.deletePerson($index)">&times</button>
+    </li>
+</ul>
